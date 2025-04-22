@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Hub - API 검색 포털</title>
+    <!-- 파비콘 설정 -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%234285f4'/%3E%3Cpath d='M30 40 L70 40 L70 60 L30 60 Z' stroke='white' stroke-width='5' fill='none' /%3E%3Ccircle cx='30' cy='50' r='5' fill='white'/%3E%3Ccircle cx='70' cy='50' r='5' fill='white'/%3E%3Cline x1='40' y1='30' x2='40' y2='70' stroke='white' stroke-width='5'/%3E%3Cline x1='60' y1='30' x2='60' y2='70' stroke='white' stroke-width='5'/%3E%3C/svg%3E" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="search-hero" id="search-hero">
+            <div class="logo">
+                <h1><span class="highlight">API</span> Hub</h1>
+                <p class="subtitle">원하는 API를 쉽고 빠르게 찾아보세요</p>
+            </div>
+            
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="API 이름, 설명, 카테고리 등으로 검색...">
+                    <button id="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="category-filter">카테고리</label>
+                        <select id="category-filter">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="provider-filter">제공자</label>
+                        <select id="provider-filter">
+                            <option value="">전체</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="pricing-filter">가격 정책</label>
+                        <select id="pricing-filter">
+                            <option value="">전체</option>
+                            <option value="무료">무료</option>
+                            <option value="무료 티어">무료 티어 있음</option>
+                            <option value="유료">유료</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="results-page" id="results-page" style="display: none;">
+            <header>
+                <div class="container">
+                    <div class="header-content">
+                        <h1><span class="highlight">API</span> Hub</h1>
+                        <div class="header-search-bar">
+                            <input type="text" id="header-search-input" placeholder="API 이름, 설명, 카테고리 등으로 검색...">
+                            <button id="header-search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="header-filters">
+                        <div class="filter-group">
+                            <label for="header-category-filter">카테고리</label>
+                            <select id="header-category-filter">
+                                <option value="">전체</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="header-provider-filter">제공자</label>
+                            <select id="header-provider-filter">
+                                <option value="">전체</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="header-pricing-filter">가격 정책</label>
+                            <select id="header-pricing-filter">
+                                <option value="">전체</option>
+                                <option value="무료">무료</option>
+                                <option value="무료 티어">무료 티어 있음</option>
+                                <option value="유료">유료</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="container">
+                <section class="results-section">
+                    <div class="results-header">
+                        <h2>API 목록 <span id="result-count">(0)</span></h2>
+                        <div class="view-toggle">
+                            <button class="view-btn active" id="grid-view-btn" title="그리드 보기">
+                                <i class="fas fa-th-large"></i>
+                            </button>
+                            <button class="view-btn" id="list-view-btn" title="리스트 보기">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="results-container" class="animate-container">
+                        <!-- 결과가 여기에 동적으로 추가됩니다 -->
+                    </div>
+                    
+                    <!-- 검색 결과 없음 템플릿 -->
+                    <template id="no-results-template">
+                        <div class="no-results">
+                            <p>검색 결과가 없습니다. 다른 검색어나 필터를 시도해보세요.</p>
+                        </div>
+                    </template>
+                </section>
+            </main>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2025 API Hub. 모든 권리 보유. <span>Made by <strong><a href="https://www.fornerds.io/" target="_blank">ForNerds</a></strong></span></p>
+            </div>
+        </footer>
+    </div>
+
+    <template id="api-card-template">
+        <div class="api-card">
+            <div class="api-header">
+                <div class="api-title-wrap">
+                    <h3 class="api-name"></h3>
+                    <span class="api-provider"></span>
+                </div>
+            </div>
+            <p class="api-description"></p>
+            <div class="api-details">
+                <div class="api-detail">
+                    <span class="detail-label"><i class="fas fa-tag"></i> 카테고리:</span>
+                    <span class="api-category"></span>
+                </div>
+                <div class="api-detail">
+                    <span class="detail-label"><i class="fas fa-coins"></i> 가격 정책:</span>
+                    <span class="api-pricing"></span>
+                </div>
+                <div class="api-detail">
+                    <span class="detail-label"><i class="fas fa-lock"></i> 인증 방식:</span>
+                    <span class="api-auth"></span>
+                </div>
+            </div>
+            <div class="api-action">
+                <a href="#" class="api-doc-link" target="_blank">
+                    <i class="fas fa-book"></i> 문서 보기
+                </a>
+            </div>
+        </div>
+    </template>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html> 
