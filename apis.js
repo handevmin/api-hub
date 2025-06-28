@@ -160,7 +160,7 @@ const apis = [
     "category": "인증/사용자관리",
     "provider": "NICE",
     "pricing": "사용량 기반",
-    "documentation": "https://www.niceid.co.kr/",
+    "documentation": "https://www.niceapi.co.kr",
     "auth": "API 키"
   },
   {
@@ -169,7 +169,7 @@ const apis = [
     "category": "인증/사용자관리",
     "provider": "PASS",
     "pricing": "사용량 기반",
-    "documentation": "https://www.passauth.co.kr/",
+    "documentation": "https://openapi.sk.com/products/detail?svcSeq=64",
     "auth": "API 키"
   },
   {
@@ -178,7 +178,7 @@ const apis = [
     "category": "인증/사용자관리",
     "provider": "금융결제원",
     "pricing": "사용량 기반",
-    "documentation": "https://www.yessign.or.kr/",
+    "documentation": "https://fidoweb.yessign.or.kr:3300/guide/guide.html",
     "auth": "인증서"
   },
   
@@ -207,7 +207,7 @@ const apis = [
     "category": "인증/사용자관리",
     "provider": "Auth0",
     "pricing": "무료 티어 + 유료 요금제",
-    "documentation": "https://auth0.com/",
+    "documentation": "https://auth0.com/docs/api",
     "auth": "OAuth + JWT"
   },
   {
@@ -243,7 +243,7 @@ const apis = [
     "category": "인증/사용자관리",
     "provider": "Amazon",
     "pricing": "사용량 기반",
-    "documentation": "https://aws.amazon.com/cognito",
+    "documentation": "https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/Welcome.html",
     "auth": "토큰"
   },
   
@@ -254,7 +254,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "토스페이먼츠",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://www.tosspayments.com/ko",
+    "documentation": "https://developers.tosspayments.com/",
     "auth": "API 키"
   },
   {
@@ -263,7 +263,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "포트원",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://www.portone.io/",
+    "documentation": "https://portone.gitbook.io/docs/",
     "auth": "API 키"
   },
   {
@@ -272,7 +272,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "KG이니시스",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://www.inicis.com/",
+    "documentation": "https://manual.inicis.com/",
     "auth": "API 키"
   },
   {
@@ -281,7 +281,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "Naver",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://developers.naver.com/products/naverpay",
+    "documentation": "https://developers.pay.naver.com/docs/v2/api",
     "auth": "API 키"
   },
   {
@@ -290,7 +290,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "Kakao",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://developers.kakao.com/docs/latest/ko/kakaopay/common",
+    "documentation": "https://developers.kakaopay.com/docs/payment/online/common",
     "auth": "API 키"
   },
   {
@@ -299,7 +299,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "NHN KCP",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://www.kcp.co.kr/",
+    "documentation": "https://developer.kcp.co.kr/",
     "auth": "API 키"
   },
   {
@@ -308,18 +308,10 @@ const apis = [
     "category": "결제/금융",
     "provider": "NICE",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://www.nicepay.co.kr/",
+    "documentation": "https://developers.nicepay.co.kr/",
     "auth": "API 키"
   },
-  {
-    "name": "LG U+ XPay API",
-    "description": "LG U+에서 제공하는 온라인 결제 서비스 API",
-    "category": "결제/금융",
-    "provider": "LG U+",
-    "pricing": "트랜잭션 기반",
-    "documentation": "https://www.uplus.co.kr/biz/sale/epay/RetrieveIndexWebEPay.hpi",
-    "auth": "API 키"
-  },
+
   
   // 결제 및 금융 - 글로벌 결제
   {
@@ -337,7 +329,7 @@ const apis = [
     "category": "결제/금융",
     "provider": "Adyen",
     "pricing": "트랜잭션 기반",
-    "documentation": "https://www.adyen.com/",
+    "documentation": "https://docs.adyen.com/",
     "auth": "API 키"
   },
   {
@@ -402,7 +394,7 @@ const apis = [
     "category": "금융데이터",
     "provider": "Plaid",
     "pricing": "사용량 기반",
-    "documentation": "https://plaid.com/",
+    "documentation": "https://plaid.com/docs/",
     "auth": "API 키"
   },
   {
@@ -420,7 +412,7 @@ const apis = [
     "category": "금융데이터",
     "provider": "Bloomberg",
     "pricing": "구독 기반",
-    "documentation": "https://www.bloomberg.com/professional/support/api-library/",
+    "documentation": "https://bloomberg.github.io/blpapi-docs/",
     "auth": "API 키"
   },
   {
@@ -449,7 +441,7 @@ const apis = [
     "category": "지도/위치",
     "provider": "Naver",
     "pricing": "무료 티어 + 사용량 기반",
-    "documentation": "https://www.ncloud.com/product/applicationService/maps",
+    "documentation": "https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Getting-Started.html",
     "auth": "API 키"
   },
   {
@@ -467,7 +459,7 @@ const apis = [
     "category": "지도/위치",
     "provider": "SK",
     "pricing": "사용량 기반",
-    "documentation": "https://tmapapi.sktelecom.com/",
+    "documentation": "https://tmapapi.tmapmobility.com/",
     "auth": "API 키"
   },
   {
@@ -476,7 +468,7 @@ const apis = [
     "category": "지도/위치",
     "provider": "국토교통부",
     "pricing": "무료",
-    "documentation": "https://www.vworld.kr/",
+    "documentation": "https://www.vworld.kr/v4po_openapi_s001.do",
     "auth": "API 키"
   },
   
@@ -496,7 +488,7 @@ const apis = [
     "category": "지도/위치",
     "provider": "Mapbox",
     "pricing": "사용량 기반",
-    "documentation": "https://www.mapbox.com/",
+    "documentation": "https://docs.mapbox.com/",
     "auth": "API 키"
   },
   {
@@ -514,7 +506,7 @@ const apis = [
     "category": "지도/위치",
     "provider": "OpenStreetMap",
     "pricing": "무료",
-    "documentation": "https://www.openstreetmap.org/",
+    "documentation": "https://wiki.openstreetmap.org/wiki/API",
     "auth": "API 키"
   },
   {
@@ -543,7 +535,7 @@ const apis = [
     "category": "소셜 미디어",
     "provider": "Naver",
     "pricing": "무료",
-    "documentation": "https://developers.naver.com/products/blog",
+    "documentation": "https://developers.naver.com/docs/serviceapi/search/blog/blog.md",
     "auth": "OAuth"
   },
   {
@@ -619,7 +611,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "Naver",
     "pricing": "사용량 기반",
-    "documentation": "https://clova.ai/",
+    "documentation": "https://api.ncloud-docs.com/docs/ai-naver-clovastudio-summary",
     "auth": "API 키"
   },
   {
@@ -637,7 +629,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "Kakao",
     "pricing": "사용량 기반",
-    "documentation": "https://developers.kakao.com/docs/latest/ko/vision/common",
+    "documentation": "https://developers.kakao.com/",
     "auth": "API 키"
   },
   {
@@ -675,7 +667,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "Anthropic",
     "pricing": "사용량 기반",
-    "documentation": "https://www.anthropic.com/claude",
+        "documentation": "https://docs.anthropic.com/en/home",
     "auth": "API 키"
   },
   {
@@ -684,7 +676,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "Google",
     "pricing": "사용량 기반",
-    "documentation": "https://cloud.google.com/products/ai",
+    "documentation": "https://cloud.google.com/ai/apis?hl=ko",
     "auth": "API 키"
   },
   {
@@ -693,7 +685,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "Microsoft",
     "pricing": "사용량 기반",
-    "documentation": "https://azure.microsoft.com/en-us/services/cognitive-services",
+    "documentation": "https://learn.microsoft.com/ko-kr/rest/api/azure/",
     "auth": "API 키"
   },
   {
@@ -702,7 +694,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "IBM",
     "pricing": "사용량 기반",
-    "documentation": "https://www.ibm.com/watson",
+    "documentation": "https://developer.ibm.com/components/watson-apis/",
     "auth": "API 키"
   },
   {
@@ -711,7 +703,7 @@ const apis = [
     "category": "AI/기계학습",
     "provider": "Amazon",
     "pricing": "사용량 기반",
-    "documentation": "https://aws.amazon.com/machine-learning/",
+    "documentation": "https://docs.aws.amazon.com/machine-learning/?icmpid=docs_homepage_ml",
     "auth": "API 키"
   },
   {
@@ -749,7 +741,7 @@ const apis = [
     "category": "클라우드/스토리지",
     "provider": "Naver",
     "pricing": "사용량 기반",
-    "documentation": "https://www.ncloud.com/product/storage/objectStorage",
+    "documentation": "https://api.ncloud-docs.com/docs/storage-ncloudstorage",
     "auth": "API 키"
   },
   {
@@ -758,7 +750,7 @@ const apis = [
     "category": "클라우드/스토리지",
     "provider": "KT",
     "pricing": "사용량 기반",
-    "documentation": "https://cloud.kt.com/",
+        "documentation": "https://cloud.kt.com/docs/open-api-guide/",
     "auth": "API 키"
   },
   {
@@ -767,7 +759,7 @@ const apis = [
     "category": "클라우드/스토리지",
     "provider": "NHN",
     "pricing": "사용량 기반",
-    "documentation": "https://www.toast.com/kr",
+        "documentation": "https://docs.nhncloud.com/",
     "auth": "API 키"
   },
   
@@ -823,7 +815,7 @@ const apis = [
     "category": "클라우드/스토리지",
     "provider": "Cloudinary",
     "pricing": "무료 티어 + 사용량 기반",
-    "documentation": "https://cloudinary.com/documentation/upload_api",
+    "documentation": "https://cloudinary.com/documentation",
     "auth": "API 키"
   },
   
@@ -843,7 +835,7 @@ const apis = [
     "category": "전자상거래",
     "provider": "쿠팡",
     "pricing": "무료",
-    "documentation": "https://partners.coupang.com/",
+    "documentation": "https://developers.coupangcorp.com/",
     "auth": "API 키"
   },
   {
@@ -872,7 +864,7 @@ const apis = [
     "category": "전자상거래",
     "provider": "WooCommerce",
     "pricing": "무료",
-    "documentation": "https://woocommerce.com/documentation/plugins/woocommerce/woocommerce-rest-api/",
+    "documentation": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
     "auth": "API 키"
   },
   {
@@ -975,7 +967,7 @@ const apis = [
     "category": "데이터/분석",
     "provider": "MongoDB",
     "pricing": "무료 티어 + 사용량 기반",
-    "documentation": "https://www.mongodb.com/cloud/atlas",
+    "documentation": "https://www.mongodb.com/docs/atlas/api/",
     "auth": "API 키"
   },
   {
@@ -993,7 +985,7 @@ const apis = [
     "category": "데이터/분석",
     "provider": "Amazon",
     "pricing": "사용량 기반",
-    "documentation": "https://aws.amazon.com/dynamodb",
+    "documentation": "https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/Welcome.html",
     "auth": "API 키"
   },
   {
@@ -1002,7 +994,7 @@ const apis = [
     "category": "데이터/분석",
     "provider": "Supabase",
     "pricing": "무료 티어 + 사용량 기반",
-    "documentation": "https://supabase.io/",
+    "documentation": "https://supabase.com/docs/guides/api",
     "auth": "API 키"
   },
   {
@@ -1096,7 +1088,7 @@ const apis = [
     "category": "미디어/엔터테인먼트",
     "provider": "Naver",
     "pricing": "사용량 기반",
-    "documentation": "https://clova.ai/ko",
+    "documentation": "https://developers.naver.com/docs/clova/api/",
     "auth": "API 키"
   },
   {
@@ -1105,7 +1097,7 @@ const apis = [
     "category": "미디어/엔터테인먼트",
     "provider": "Naver",
     "pricing": "사용량 기반",
-    "documentation": "https://clova.ai/ko",
+    "documentation": "https://developers.naver.com/docs/clova/api/",
     "auth": "API 키"
   },
   {
@@ -1190,7 +1182,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "Naver",
     "pricing": "사용량 기반",
-    "documentation": "https://www.ncloud.com/product/application/sens",
+    "documentation": "https://api.ncloud-docs.com/docs/ai-application-service-sens",
     "auth": "API 키"
   },
   {
@@ -1208,7 +1200,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "NHN",
     "pricing": "사용량 기반",
-    "documentation": "https://www.toast.com/kr/service/notification",
+        "documentation": "https://docs.nhncloud.com/",
     "auth": "API 키"
   },
   {
@@ -1217,7 +1209,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "알리고",
     "pricing": "사용량 기반",
-    "documentation": "https://smartsms.aligo.in/",
+    "documentation": "https://smartsms.aligo.in/admin/api/info.html",
     "auth": "API 키"
   },
   {
@@ -1237,7 +1229,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "Twilio",
     "pricing": "사용량 기반",
-    "documentation": "https://www.twilio.com/messaging",
+    "documentation": "https://www.twilio.com/docs/messaging/api",
     "auth": "API 키"
   },
   {
@@ -1246,7 +1238,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "Mailgun",
     "pricing": "사용량 기반",
-    "documentation": "https://www.mailgun.com/",
+    "documentation": "https://documentation.mailgun.com/",
     "auth": "API 키"
   },
   {
@@ -1255,7 +1247,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "Amazon",
     "pricing": "사용량 기반",
-    "documentation": "https://aws.amazon.com/ses",
+    "documentation": "https://docs.aws.amazon.com/ses/latest/APIReference/Welcome.html",
     "auth": "API 키"
   },
   {
@@ -1273,7 +1265,7 @@ const apis = [
     "category": "메시징/알림",
     "provider": "OneSignal",
     "pricing": "무료 티어 + 사용량 기반",
-    "documentation": "https://onesignal.com/",
+    "documentation": "https://documentation.onesignal.com/",
     "auth": "API 키"
   },
   {
@@ -1329,7 +1321,7 @@ const apis = [
     "category": "개발 도구",
     "provider": "hCaptcha",
     "pricing": "무료 티어 + 사용량 기반",
-    "documentation": "https://www.hcaptcha.com/",
+        "documentation": "https://docs.hcaptcha.com/",
     "auth": "API 키"
   },
   {
@@ -1365,7 +1357,7 @@ const apis = [
     "category": "개발 도구",
     "provider": "Adobe",
     "pricing": "구독 기반",
-    "documentation": "https://www.adobe.com/sign/developer.html",
+    "documentation": "https://developer.adobe.com/document-services/apis/sign-api/",
     "auth": "OAuth"
   },
   {
@@ -1374,7 +1366,7 @@ const apis = [
     "category": "개발 도구",
     "provider": "행정안전부",
     "pricing": "무료",
-    "documentation": "https://www.juso.go.kr/addrlink/devAddrLinkRequestGuide.do",
+    "documentation": "https://business.juso.go.kr/addrlink/openApi/apiExprn.do",
     "auth": "API 키"
   },
   {
@@ -1398,12 +1390,12 @@ const apis = [
   
   // IoT 및 스마트홈 - 국내
   {
-    "name": "SKT ThingPlug API",
-    "description": "IoT 플랫폼, 디바이스 관리 기능을 제공하는 API",
+    "name": "SKT ThingPlug LoRa API",
+    "description": "LoRa 네트워크 기반 IoT 플랫폼, 디바이스 관리 기능을 제공하는 API",
     "category": "IoT/스마트홈",
     "provider": "SK",
     "pricing": "사용량 기반",
-    "documentation": "https://www.sktiot.com/iot/developer/index",
+    "documentation": "https://thingpluglora.docs.apiary.io/#",
     "auth": "API 키"
   },
   {
@@ -1421,7 +1413,7 @@ const apis = [
     "category": "IoT/스마트홈",
     "provider": "Samsung",
     "pricing": "무료 + 사용량 기반",
-    "documentation": "https://smartthings.developer.samsung.com/",
+    "documentation": "https://developer.smartthings.com/docs/api/public",
     "auth": "OAuth"
   },
   
@@ -1432,7 +1424,7 @@ const apis = [
     "category": "IoT/스마트홈",
     "provider": "Amazon",
     "pricing": "사용량 기반",
-    "documentation": "https://aws.amazon.com/iot",
+    "documentation": "https://docs.aws.amazon.com/iot/latest/apireference/Welcome.html",
     "auth": "API 키"
   },
   {
@@ -1441,7 +1433,7 @@ const apis = [
     "category": "IoT/스마트홈",
     "provider": "Google",
     "pricing": "사용량 기반",
-    "documentation": "https://cloud.google.com/iot",
+    "documentation": "https://cloud.google.com/iot/docs/reference/rest",
     "auth": "API 키"
   },
   {
@@ -1450,7 +1442,7 @@ const apis = [
     "category": "IoT/스마트홈",
     "provider": "Microsoft",
     "pricing": "사용량 기반",
-    "documentation": "https://azure.microsoft.com/en-us/services/iot-hub",
+    "documentation": "https://learn.microsoft.com/en-us/rest/api/iothub/",
     "auth": "API 키"
   },
   {
@@ -1468,7 +1460,7 @@ const apis = [
     "category": "IoT/스마트홈",
     "provider": "ThingsBoard",
     "pricing": "무료 티어 + 구독 기반",
-    "documentation": "https://thingsboard.io/",
+        "documentation": "https://thingsboard.io/docs/api/",
     "auth": "API 키"
   },
   {
@@ -1562,7 +1554,7 @@ const apis = [
     "category": "헬스케어/의료",
     "provider": "Human API",
     "pricing": "사용량 기반",
-    "documentation": "https://www.humanapi.co/",
+    "documentation": "https://reference.humanapi.co/docs/overview",
     "auth": "OAuth"
   },
   {
@@ -1582,25 +1574,7 @@ const apis = [
     "category": "배송/물류",
     "provider": "우정사업본부",
     "pricing": "무료",
-    "documentation": "https://service.epost.go.kr/",
-    "auth": "API 키"
-  },
-  {
-    "name": "CJ대한통운 API",
-    "description": "배송추적, 배송예약 등의 기능을 제공하는 API",
-    "category": "배송/물류",
-    "provider": "CJ대한통운",
-    "pricing": "사용량 기반",
-    "documentation": "https://www.cjlogistics.com/ko/tool/parcel/tracking",
-    "auth": "API 키"
-  },
-  {
-    "name": "로젠택배 API",
-    "description": "배송조회 서비스를 제공하는 API",
-    "category": "배송/물류",
-    "provider": "로젠택배",
-    "pricing": "사용량 기반",
-    "documentation": "https://www.ilogen.com/web/openapi",
+    "documentation": "http://openapi.epost.go.kr/contents/api_spec_kp1.html",
     "auth": "API 키"
   },
   {
@@ -1609,16 +1583,7 @@ const apis = [
     "category": "배송/물류",
     "provider": "롯데택배",
     "pricing": "사용량 기반",
-    "documentation": "https://www.lotteglogis.com/home/reservation/tracking/index",
-    "auth": "API 키"
-  },
-  {
-    "name": "한진택배 API",
-    "description": "배송조회 서비스를 제공하는 API",
-    "category": "배송/물류",
-    "provider": "한진택배",
-    "pricing": "사용량 기반",
-    "documentation": "https://www.hanjin.co.kr/",
+    "documentation": "https://api.lotteon.com/apiService/?apiNm=GetStarted",
     "auth": "API 키"
   },
   
@@ -1629,7 +1594,7 @@ const apis = [
     "category": "배송/물류",
     "provider": "UPS",
     "pricing": "사용량 기반",
-    "documentation": "https://www.ups.com/us/en/services/technology-integration/developer-api.page",
+    "documentation": "https://www.ups.com/upsdeveloperkit?loc=en_US",
     "auth": "API 키"
   },
   {
@@ -1665,7 +1630,7 @@ const apis = [
     "category": "배송/물류",
     "provider": "Shippo",
     "pricing": "사용량 기반",
-    "documentation": "https://goshippo.com/",
+        "documentation": "https://docs.goshippo.com/",
     "auth": "API 키"
   },
   {
@@ -1674,7 +1639,7 @@ const apis = [
     "category": "배송/물류",
     "provider": "ShipEngine",
     "pricing": "사용량 기반",
-    "documentation": "https://www.shipengine.com/",
+        "documentation": "https://www.shipengine.com/docs/",
     "auth": "API 키"
   },
   
